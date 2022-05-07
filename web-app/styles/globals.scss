@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Azeret Mono", monospace !important;
+}
+html,
+body {
+  background-color: #011936;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main {
+  padding: 1rem;
+}
+.styledKnob {
+}
+.styledKnob circle,
+.styledKnob path {
+  fill: #9fc490;
+  opacity: 0.4;
+  transition: opacity 100ms, color 100ms ease-in-out;
+}
+
+.styledKnob:hover circle,
+.styledKnob:hover path,
+.styledKnob:focus circle,
+.styledKnob:focus path {
+  fill: #465362;
+  opacity: 1;
+  transition: opacity 450ms, color 450ms ease-in-out;
+}
+
+.toggle {
+  border: 2px solid #11a11f;
+  background: #9fc490;
+  padding: 0.5em 1em;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 12px;
+}
+
+.toggle.inactive {
+  background-color: #465362;
+  border-color: #465362;
+}
+
+.knobs-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem 0;
+  .knob-label {
+    color: white;
+    margin-bottom: 1em;
+  }
+}
+
+.knobs-grid .knob- {
+  flex-basis: 25%;
+  padding: 1em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px dashed #11a11f;
+}
+.knobs-grid .value {
+  color: white;
+  font-size: 16px;
+}
+.disabled {
+  pointer-events: none;
+}
+
+.disabled circle {
+  fill: grey;
+}
+
+.mt-5 {
+  margin-top: 1rem;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.knob- * {
+  transition: background-color 300ms ease;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  top: 0;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+}
+
+.container {
+  width: 100%;
+  padding: 1em 0.5em;
+}
+
+.nav-links {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5em 0;
+}
+
+.home,
+.about,
+.team {
+  text-align: center;
+  color: white;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    margin-top: 1.5em;
+  }
+  p {
+    max-width: 90%;
+    text-align: left;
+    width: 100%;
+    padding: 0 1rem;
+    word-wrap: break-word;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.team-members {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em 1em;
+  list-style: none;
+  li {
+    img {
+      max-width: 240px;
+      border-radius: 50%;
+    }
+    p {
+      font-size: 12px;
+      padding: 0 !important;
+      margin: 0 !important;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align-last: center;
+  gap: 0 0.2em;
+  border: none;
+  outline: none;
+  background-color: #9fc490;
+  color: white;
+  cursor: pointer;
+}
+
+.code {
+  color: #c0dfa1;
+}
+
+@media screen and (max-width: 768px) {
+  .knobs-grid .knob- {
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home {
+    margin-top: 1rem;
+  }
+
+  .home,
+  .about,
+  .team {
+    p {
+      max-width: 90%;
+    }
+  }
+
+  .team {
+    a {
+      display: block;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      flex-basis: 33%;
+      img {
+        max-width: 48px;
+      }
+
+      p {
+        font-size: 10px !important;
+        width: 100%;
+        margin-top: 0.5em !important;
+      }
+    }
+  }
+
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .edit {
+    margin-top: 1rem;
+  }
+
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 16px !important;
+    top: 16px !important;
+  }
+}
+ul {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doc {
+  width: 100%;
+}

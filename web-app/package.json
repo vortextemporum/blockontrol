@@ -1,0 +1,41 @@
+{
+  "name": "next-web3-boilerplate",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ethersproject/bignumber": "^5.5.0",
+    "@ethersproject/contracts": "^5.5.0",
+    "@ethersproject/providers": "^5.5.0",
+    "@ethersproject/units": "^5.5.0",
+    "@ethersproject/wallet": "^5.5.0",
+    "@fullpage/react-fullpage": "^0.1.19",
+    "@metamask/detect-provider": "^1.2.0",
+    "@metamask/onboarding": "^1.0.1",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "next": "12.0.2",
+    "rc-knob": "^1.0.1",
+    "react": "17.0.2",
+    "react-burger-menu": "^3.0.6",
+    "react-dial-knob": "^1.3.0",
+    "react-dom": "17.0.2",
+    "react-toastify": "^8.1.0",
+    "sass": "^1.44.0",
+    "swr": "^1.0.1"
+  },
+  "devDependencies": {
+    "@typechain/ethers-v5": "^8.0.1",
+    "@types/react": "^17.0.34",
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.2",
+    "ethers": "^5.5.1",
+    "typechain": "^6.0.2",
+    "typescript": "^4.4.4"
+  }
+}
