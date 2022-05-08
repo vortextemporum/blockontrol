@@ -54,4 +54,4 @@ Smart contract: [https://testnet.snowtrace.io/address/0x4ade94ba1ce19ede7caad879
 
 Audio recording: [https://arweave.net/nswjCtk_CWETS6qJ7WyFBnkVmOKhAoLwv98F6OEhmAU](https://arweave.net/nswjCtk_CWETS6qJ7WyFBnkVmOKhAoLwv98F6OEhmAU)
 
-Video teaser: [https://arweave.net/nswjCtk_CWETS6qJ7WyFBnkVmOKhAoLwv98F6OEhmAU]
+Video teaser: [https://arweave.net/WRuavcja7EjArrpBdlSR0n9nyHN_mfgTEla8R68JTSI](https://arweave.net/WRuavcja7EjArrpBdlSR0n9nyHN_mfgTEla8R68JTSI)
